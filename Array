@@ -1,0 +1,11 @@
+const numbers = prompt("Enter numbers separated by commas:").split(',').map(Number);
+const names = prompt("Enter names separated by commas:").split(',');
+
+const mergedArray = [...numbers, ...names];
+console.log("Merged Array:", mergedArray);
+
+const sortedNumbers = numbers.sort((a, b) => b - a);
+console.log("Sorted Numbers (Descending):", sortedNumbers);
+
+const sortedNames = names.sort();
+console.log("Sorted Names (Ascending):", sortedNames);
